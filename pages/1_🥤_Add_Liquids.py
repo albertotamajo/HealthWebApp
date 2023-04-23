@@ -32,7 +32,7 @@ st.markdown(
 quantity_default = 200
 file = "{0}{1}".format(AWS_BUCKET, LIQUIDS_FILE)
 
-type = st.selectbox('What is the liquid?', ["<select>", "water", "milk", "others"])
+type = st.selectbox('What is the liquid?', ["<select>", "Water", "Milk", "Others"])
 quantity = st.number_input('How much of it have you drunk (ml)?', min_value=0, max_value=1000, value=quantity_default, step=1)
 password = st.text_input('Password')
 if st.button('Add liquids'):
